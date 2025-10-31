@@ -1,9 +1,9 @@
 name: Build for esp32-book
 
 on:
-  push:
-    branches:
-      - master
+  # push:
+  #   branches:
+  #     - master
   schedule:
     - cron: '0 6 * * *'
   workflow_dispatch:
@@ -45,7 +45,7 @@ jobs:
           # Upload to oss
           ls -alhtr && \
             cd .. && \
-            ossutil sync archive/ oss://${{ secrets.OSS_BUCKET }}/esp32-book/ -f --delete
+            ossutil sync archive/ oss://${{ secrets.OSS_BUCKET }}/book-rs/esp32-book/ -f --delete
       - name: Sending Build Status
         if: always()
         env:

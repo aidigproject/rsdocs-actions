@@ -44,7 +44,7 @@ jobs:
           # Upload to oss
           ls -alhtr && \
             cd .. && \
-            ossutil sync actix-web-archive/ oss://${{ secrets.OSS_BUCKET }}/actix-web/ -f --delete
+            ossutil sync actix-web-archive/ oss://${{ secrets.OSS_BUCKET }}/book-rs/actix-web/ -f --delete
       - name: Sending Build Status
         if: always()
         env:

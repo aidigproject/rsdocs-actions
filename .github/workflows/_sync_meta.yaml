@@ -23,8 +23,8 @@ jobs:
       - name: Build opendocs UI.
         run: |
           # Upload to oss
-          ossutil cp index.html oss://${{ secrets.OSS_BUCKET }}/ -f
-          ossutil cp -r assets oss://${{ secrets.OSS_BUCKET }}/assets/ -f
+          ossutil cp index.html oss://${{ secrets.OSS_BUCKET }}/book-rs/ -f
+          ossutil cp -r assets oss://${{ secrets.OSS_BUCKET }}/book-rs/assets/ -f
       - name: Sending Build Status
         if: always()
         env:

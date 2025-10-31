@@ -89,7 +89,7 @@ jobs:
           # Upload to oss
           ls -alhtr && \
             cd .. && \
-            ossutil sync trpl-archive/ oss://${{ secrets.OSS_BUCKET }}/trpl/ -f --delete
+            ossutil sync trpl-archive/ oss://${{ secrets.OSS_BUCKET }}/book-rs/trpl/ -f --delete
       - name: Sending Build Status
         if: always()
         env:

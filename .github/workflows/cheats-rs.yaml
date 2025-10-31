@@ -48,7 +48,7 @@ jobs:
 
           # Upload to oss
           ls -alhtr && cd .. && \
-            ossutil sync cheats.rs-archive/ oss://${{ secrets.OSS_BUCKET }}/cheats.rs/ -f --delete
+            ossutil sync cheats.rs-archive/ oss://${{ secrets.OSS_BUCKET }}/book-rs/cheats.rs/ -f --delete
       - name: Sending Build Status
         if: always()
         env:

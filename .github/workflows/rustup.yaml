@@ -45,7 +45,7 @@ jobs:
           # Upload to oss
           ls -alhtr && \
             cd ../../ && \
-            ossutil sync rustup-archive/ oss://${{ secrets.OSS_BUCKET }}/rustup/ -f --delete
+            ossutil sync rustup-archive/ oss://${{ secrets.OSS_BUCKET }}/book-rs/rustup/ -f --delete
       - name: Sending Build Status
         if: always()
         env:

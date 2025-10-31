@@ -47,7 +47,7 @@ jobs:
           # Upload to oss
           ls -alhtr && \
             cd .. && \
-            ossutil sync archive/ oss://${{ secrets.OSS_BUCKET }}/async-book/ -f --delete
+            ossutil sync archive/ oss://${{ secrets.OSS_BUCKET }}/book-rs/async-book/ -f --delete
       - name: Sending Build Status
         if: always()
         env:

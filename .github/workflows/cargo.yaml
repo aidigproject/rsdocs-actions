@@ -51,7 +51,7 @@ jobs:
           # Upload to oss
           ls -alhtr && \
             cd .. && \
-            ossutil sync cargo-archive/ oss://${{ secrets.OSS_BUCKET }}/cargo/ -f --delete
+            ossutil sync cargo-archive/ oss://${{ secrets.OSS_BUCKET }}/book-rs/cargo/ -f --delete
       - name: Sending Build Status
         if: always()
         env:

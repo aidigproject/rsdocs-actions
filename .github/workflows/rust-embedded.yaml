@@ -41,11 +41,11 @@ jobs:
           cd rust-embedded-en && \
             mdbook build && \
             cp -ar book/* ../archive/en/
-            
+
           # Upload to oss
           ls -alhtr && \
             cd .. && \
-            ossutil sync archive/ oss://${{ secrets.OSS_BUCKET }}/rust-embedded/ -f --delete
+            ossutil sync archive/ oss://${{ secrets.OSS_BUCKET }}/book-rs/rust-embedded/ -f --delete
       - name: Sending Build Status
         if: always()
         env:

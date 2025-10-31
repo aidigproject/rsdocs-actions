@@ -13,7 +13,6 @@
 [![the-rust-edition-guide](https://github.com/aidigproject/rsdocs-actions/actions/workflows/edition-guide.yaml/badge.svg)](https://github.com/aidigproject/rsdocs-actions/actions/workflows/edition-guide.yaml)
 [![actix-web](https://github.com/aidigproject/rsdocs-actions/actions/workflows/actix-web.yaml/badge.svg)](https://github.com/aidigproject/rsdocs-actions/actions/workflows/actix-web.yaml)
 [![cargo](https://github.com/aidigproject/rsdocs-actions/actions/workflows/cargo.yaml/badge.svg)](https://github.com/aidigproject/rsdocs-actions/actions/workflows/cargo.yaml)
-[![rust-guide](https://github.com/aidigproject/rsdocs-actions/actions/workflows/rust-guide.yaml/badge.svg)](https://github.com/aidigproject/rsdocs-actions/actions/workflows/rust-guide.yaml)
 
 ## Requirements
 
@@ -47,7 +46,6 @@ rust-lang/rust uses in [this file][rust-mdbook].
 |[Rust Cargo 官书（非官方翻译)](http://docs.aidig.co/cargo/zh/) | zh | [@chinanf-boy](https://github.com/chinanf-boy/cargo-book-zh) |
 |[The Cargo Book](http://docs.aidig.co/cargo/en/) | en | [@rust-lang](https://github.com/rust-lang/cargo) |
 |[actix-web 中文文档](http://docs.aidig.co/actix-web/zh/) | zh | [@zzy](https://github.com/zzy/actix-web-zh-cn) |
-|[Rust 实践指南](http://docs.aidig.co/rust-guide/zh/) | zh | [@sunface](https://github.com/zzy/rust-guide) |
 |[Comprehensive Rust](http://docs.aidig.co/comprehensive-rust/en/) | en | [@google](https://github.com/google/comprehensive-rust) |
 |[Rustup: the Rust toolchain installer](http://docs.aidig.co/rustup/en/) | en | [@rust-lang](https://github.com/rust-lang/rustup) |
 |[PyO3 user guide](http://docs.aidig.co/pyo3/en/) | en | [@PyO3](https://github.com/PyO3/pyo3) |

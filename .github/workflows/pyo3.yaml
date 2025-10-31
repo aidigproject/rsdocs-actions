@@ -45,7 +45,7 @@ jobs:
 
           # Upload to oss
           cd ../ && \
-            ossutil sync pyo3-archive/ oss://${{ secrets.OSS_BUCKET }}/pyo3/ -f --delete
+            ossutil sync pyo3-archive/ oss://${{ secrets.OSS_BUCKET }}/book-rs/pyo3/ -f --delete
       - name: Sending Build Status
         if: always()
         env:

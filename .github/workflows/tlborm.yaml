@@ -51,7 +51,7 @@ jobs:
           # Upload to oss
           ls -alhtr && \
             cd .. && \
-            ossutil sync tlborm-archive/ oss://${{ secrets.OSS_BUCKET }}/tlborm/ -f --delete
+            ossutil sync tlborm-archive/ oss://${{ secrets.OSS_BUCKET }}/book-rs/tlborm/ -f --delete
       - name: Sending Build Status
         if: always()
         env:

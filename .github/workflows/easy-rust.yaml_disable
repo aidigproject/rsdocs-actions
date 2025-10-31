@@ -49,7 +49,7 @@ jobs:
           # Upload to oss
           ls -alhtr && \
             cd .. && \
-            ossutil sync easy-rust-archive/ oss://${{ secrets.OSS_BUCKET }}/easy-rust/ -f --delete
+            ossutil sync easy-rust-archive/ oss://${{ secrets.OSS_BUCKET }}/book-rs/easy-rust/ -f --delete
       - name: Sending Build Status
         if: always()
         env:

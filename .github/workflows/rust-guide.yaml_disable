@@ -44,7 +44,7 @@ jobs:
           # Upload to oss
           ls -alhtr && \
             cd .. && \
-            ossutil sync rust-guide-archive/ oss://${{ secrets.OSS_BUCKET }}/rust-guide/ -f --delete
+            ossutil sync rust-guide-archive/ oss://${{ secrets.OSS_BUCKET }}/book-rs/rust-guide/ -f --delete
       - name: Sending Build Status
         if: always()
         env:

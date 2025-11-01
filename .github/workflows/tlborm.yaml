@@ -39,6 +39,17 @@ jobs:
           sts-token: ""
       - name: Build tlborm book
         run: |
+          # ----- prepare tools -----
+          mkdir ~/tools
+          gh release download -R Michael-F-Bryan/mdbook-linkcheck -p mdbook-linkcheck.x86_64-unknown-linux-gnu.zip
+          unzip mdbook-linkcheck.x86_64-unknown-linux-gnu.zip -d ~/tools
+          chmod +x ~/tools/mdbook-linkcheck
+
+          gh release download -R zjp-CN/mdbook-theme -p mdbook-theme_linux.tar.gz
+          tar -xzf mdbook-theme_linux.tar.gz -C ~/tools
+          echo ~/tools >> $GITHUB_PATH
+          # ----- end prepare tools -----
+
           # Build tlborm book
           mkdir -pv tlborm-archive/{en,zh}
           cd tlborm-en && \
